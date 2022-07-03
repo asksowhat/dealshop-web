@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  dealshop-web:
+    image: nginx:alpine
+    container_name: dealshop-web
+    restart: always
+    ports:
+      - 10013:80
+    volumes:
+      - $PWD/html:/usr/share/nginx/html
+    environment:
+      - PUID=1000
+      - PGID=1001

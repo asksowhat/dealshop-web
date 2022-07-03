@@ -1,0 +1,31 @@
+{
+    "status": 0,
+        "msg": "",
+        "data": {
+            "pages": [
+            {
+                "label": "admin",
+                "url": "/",
+                "redirect": "/page-1/page-1",
+                "children": [
+                {
+                    "label": "卡密管理",
+                    "schemaApi": "jsonp:/pages/cdkey.js?callback=jsonpCallback"
+                },
+                {
+                    "label": "基础设置",
+                    "schemaApi": "jsonp:/pages/base.js?callback=jsonpCallback"
+                },
+                {
+                    "label": "支付设置",
+                    "schemaApi": "jsonp:/pages/pay.js?callback=jsonpCallback"
+                },
+                {
+                    "label": "交易流水",
+                    "schemaApi": "jsonp:/pages/flow.js?callback=jsonpCallback"
+                }
+                ]
+            }
+            ]
+        }
+}
